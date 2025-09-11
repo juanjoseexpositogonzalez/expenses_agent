@@ -1,0 +1,17 @@
+[project]
+name = "expenses-agent"
+version = "0.1.0"
+description = "Agent that helps you manage your expenses."
+readme = "README.md"
+authors = [
+    { name = "Juan José Expósito González", email = "expositogonzalez.juanjose@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+expenses-agent = "expenses_agent:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
