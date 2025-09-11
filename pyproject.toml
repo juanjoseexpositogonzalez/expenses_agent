@@ -7,7 +7,10 @@ authors = [
     { name = "Juan José Expósito González", email = "expositogonzalez.juanjose@gmail.com" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "python-decouple>=3.8",
+    "sqlmodel>=0.0.24",
+]
 
 [project.scripts]
 expenses-agent = "expenses_agent:main"
@@ -15,3 +18,23 @@ expenses-agent = "expenses_agent:main"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "poethepoet>=0.37.0",
+    "pytest>=8.4.2",
+    "ty>=0.0.1a20",
+]
+
+
+[tool.poe.tasks]
+test         = "pytest -vv --cov=src --cov-report=term-missing --cov-report=html"
+lint         = "ruff check src"
+format       = "ruff format src"
+format-check = "ruff check src --fix"
+type-check   = "ruff typecheck src"
+run          = "python -m expenses_agent"
+tc           = "ty check ."
+
+[tool.setuptools]
+package-dir = {"" = "src"}

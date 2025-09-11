@@ -1,10 +1,23 @@
+# VSCode
+.vscode/
+
 # Python-generated files
 __pycache__/
 *.py[oc]
+*.py[cod]
 build/
 dist/
 wheels/
 *.egg-info
 
+# Environment variables
+.env
+
 # Virtual environments
 .venv
+.db
+.env.*
+venv/
+ENV/
+env/
+.uv/
