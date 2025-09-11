@@ -156,7 +156,7 @@ class Expense(SQLModel, table=True):
         )
 
 
-def create_db_and_tables() -> None:
+def create_db_and_tables() -> None:  # pragma: no cover
     """
     Creates the database and tables based on the defined SQLModel models.
     """
@@ -165,6 +165,6 @@ def create_db_and_tables() -> None:
     SQLModel.metadata.create_all(engine)
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     create_db_and_tables()
     logger.info("Database and tables created successfully.")

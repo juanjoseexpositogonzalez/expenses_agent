@@ -16,8 +16,16 @@ wheels/
 # Virtual environments
 .venv
 .db
+*.db
 .env.*
 venv/
 ENV/
 env/
 .uv/
+
+
+# Pytest
+.pytest_cache/
+.tox/
+htmlcov/
+.coverage
