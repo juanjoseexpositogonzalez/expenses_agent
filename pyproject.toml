@@ -33,7 +33,7 @@ lint         = "ruff check src"
 format       = "ruff format src"
 format-check = "ruff check src --fix"
 type-check   = "ruff typecheck src"
-run          = "python -m expenses_agent"
+run          = "uv run expenses-agent"
 tc           = "ty check ."
 
 [tool.setuptools]
