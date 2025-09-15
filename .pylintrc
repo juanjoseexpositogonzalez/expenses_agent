@@ -19,5 +19,6 @@ disable=missing-function-docstring,
         unsupported-assignment-operation,
         too-many-instance-attributes,
         invalid-name,
+        redefined-outer-name,
 [FORMAT]
 good-names=i,j,x,y,id,p,c1,c2,c3
