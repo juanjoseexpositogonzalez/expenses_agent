@@ -21,15 +21,6 @@ logger = logging.getLogger(__name__)
 class PaymentMethod(StrEnum):
     """
     Enumeration of possible payment methods for expenses.
-    Inherits from StrEnum to provide string values for each payment method.
-    Values:
-        CREDIT_CARD: Payment made by credit card.
-        DEBIT_CARD: Payment made by debit card.
-        CASH: Payment made in cash.
-        BANK_TRANSFER: Payment made by bank transfer.
-        MOBILE_PAYMENT: Payment made using a mobile payment system.
-        CHECK: Payment made by check.
-        OTHER: Any other payment method not listed above.
     """
 
     CREDIT_CARD = "Credit Card"
@@ -44,18 +35,6 @@ class PaymentMethod(StrEnum):
 class Currency(StrEnum):
     """
     Enumeration of supported currencies.
-    Inherits from StrEnum to provide string values for each currency.
-    Values:
-        USD: United States Dollar.
-        EUR: Euro.
-        GBP: British Pound Sterling.
-        JPY: Japanese Yen.
-        AUD: Australian Dollar.
-        CAD: Canadian Dollar.
-        CHF: Swiss Franc.
-        CNY: Chinese Yuan.
-        SEK: Swedish Krona.
-        NZD: New Zealand Dollar.
     """
 
     USD = "USD"
