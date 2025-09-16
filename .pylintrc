@@ -1,0 +1,23 @@
+[MASTER]
+docstring-min-length=10
+disable=missing-function-docstring,
+        missing-class-docstring,
+        missing-module-docstring,
+        too-few-public-methods,
+        import-error,
+        pointless-statement,
+        unused-import,
+        unused-variable,
+        no-member,
+        line-too-long,
+        too-many-arguments,
+        broad-except,
+        forgotten-debug-statement,
+        dangerous-default-value,
+        no-name-in-module,
+        unsubscriptable-object,
+        unsupported-assignment-operation,
+        too-many-instance-attributes,
+        invalid-name,
+[FORMAT]
+good-names=i,j,x,y,id,p,c1,c2,c3
